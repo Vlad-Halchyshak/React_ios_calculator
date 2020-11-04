@@ -1,0 +1,76 @@
+.container {
+  position: absolute;
+  left: 200px;
+  width: 430px;
+  height: 750px;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.memory_info {
+  position: absolute;
+  top: 12.5rem;
+  left: 12rem;
+  font-size: 14px;
+  color: blanchedalmond    
+}
+.top_part {
+  height: 240px;
+  position: relative;
+  bottom: 20px;
+ 
+}
+.display_block {
+  font-size: 110px;
+  position: relative;
+  bottom: 180px;
+
+  text-align: right;
+ padding-right: 50px;
+}
+.buttons_block {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(4,1fr);
+  padding-bottom: 200px;
+  position: relative;
+  bottom: 150px;
+}
+
+.Button {
+  background: #333;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  cursor: pointer;
+  transition: filter 0.2s ease-in;
+}
+.Button.nil {
+  width: 140px;
+  grid-column: 1 / span 2;
+  border-radius: 55px;
+  position: relative;
+  justify-content: flex-start;
+ padding-left: 45px;
+}
+.Button.special {
+  background: rgb(153, 153, 153);
+  color: black;
+}
+.Button.operator {
+  background: darkorange;
+
+}
+.Button:active {
+  filter: brightness(370%);
+}
+.Button:focus {
+  filter: brightness(370%);
+}
